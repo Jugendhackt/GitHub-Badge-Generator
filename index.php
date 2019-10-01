@@ -82,9 +82,9 @@
             break;
         
         default:
-            $viewWidth = 231;
-            $evtAbbr = "BER";
-            $evtLong = "Berlin";
+            $viewWidth = 195;
+            $evtAbbr = "";
+            $evtLong = "";
             $evtColor = "#2aabe1";
             break;
     }
