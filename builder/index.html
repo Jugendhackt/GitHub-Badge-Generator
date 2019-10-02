@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jugend Hackt Badge Generator</title>
+        <link href="fonts.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Jugend Hackt Badge Generator</h1>
+        <h2>Quickly generate an (inofficial) Jugend Hackt GitHub Badge for your README</h2>
+        
+        <br>
+        <h3>Please select the badge type:</h3>
+        <div id="badges">
+            <div id="badges-standard" onclick="selectType('standard')">
+                <img src="img/badgetypes/standard.png">
+                <p>Made at JugendHackt</p>
+            </div>
+            <div id="badges-created-for" onclick="selectType('created-for')">
+                <img src="img/badgetypes/created-for.png">
+                <p>Created for JugendHackt</p>
+            </div>
+            <div id="badges-started-at" onclick="selectType('started-at')">
+                <img src="img/badgetypes/started-at.png">
+                <p>Started at JugendHackt</p>
+            </div>
+            <div id="badges-by-alpacas" onclick="selectType('by-alpacas')">
+                <img src="img/badgetypes/by-alpacas.png">
+                <p>Created by Alpacas</p>
+            </div>
+            <div id="badges-view-presentation" onclick="selectType('view-presentation')">
+                <img src="img/badgetypes/view-presentation.png">
+                <p>View the Presentation</p>
+            </div>
+        </div>
+        <br>
+        <h3>Please select the event:</h3>
+        <div id="events"></div>
+
+        <br>
+        <h3>Optionally modify the year:</h3>
+        <input type="number" min="2000" max="2100" id="year" onchange="selectYear(); console.log('change')" oninput="selectYear(); console.log('input')">
+        <br>
+        <br>
+
+        <br>
+        <h3>Result:</h3>
+        <iframe id="preview"></iframe>
+        <br><br>
+        <div id="code">
+            <b>URL:</b> <span id="url"></span><br>
+            <b>Markdown Code:</b> <span id="md"></span>
+        </div>
+        <br><br><br><br><br>
+
+        <div class="footer">
+            View this Project on <a href="https://github.com/Jugendhackt/GitHub-Badge-Generator">GitHub</a><br>
+            "Jugend Hackt Logo" by <a href="https://jugendhackt.org">Jugend Hackt</a> is licensed under CC BY 4.0<br>
+            "Roboto" Font Copyright 2011 Google Inc. is licensed under Apache License, version 2.0<br>
+        </div>
+    </body>
+
+    <script src="index.js"></script>
+</html>
