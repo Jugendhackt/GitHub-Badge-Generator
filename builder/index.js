@@ -1,7 +1,7 @@
 // * VARIABLES * //
 var genurl = "https://jhbadge.de/"; 			// URL of the generator
 
-var types = [                       			// Types of Badges (names) 
+var types = [                       			// Types of Badges (names)
 	"by-alpacas",
 	"created-for",
 	"standard",
@@ -91,7 +91,7 @@ document.getElementById("event-ber").setAttribute("selected", "true");
 document.getElementById("year").value = yearSelected;
 
 // Refresh the Preview with the new variables
-refreshIFrame();
+refreshImage();
 
 
 // * FUNCTIONS * //
@@ -108,7 +108,7 @@ function selectType(abbr) {
 	});
 	document.getElementById("badges-"+abbr).setAttribute("selected", "true");	// add a selected border to the clicked on element
 
-	refreshIFrame();	// Refresh the preview with the new variables
+	refreshImage();	// Refresh the preview with the new variables
 }
 
 // Onclick event for all event select divs
@@ -119,17 +119,17 @@ function selectEvent(abbr) {
 	});
 	document.getElementById("event-"+abbr).setAttribute("selected", "true");	// add a selected border to the clicked on element
 
-	refreshIFrame();	// Refresh the preview with the new variables
+	refreshImage();	// Refresh the preview with the new variables
 }
 
 // Onchange and oninput event for the year select input
 function selectYear() {
 	yearSelected = document.getElementById("year").value;	// Save the new year
-	refreshIFrame();	// Refresh the preview with the new variables
+	refreshImage();	// Refresh the preview with the new variables
 }
 
-// Refreshes the content of the preview iFrame with the current variables. Also refreshes the 
-function refreshIFrame() {
+// Refreshes the content of the preview iFrame with the current variables. Also refreshes the
+function refreshImage() {
 	var url = "";
 	if(typeSelected == "") {	// If standard, don't add a type GET Variable for simplicity
 		url = genurl + "?evt=" + eventSelected + "&year=" + yearSelected;
