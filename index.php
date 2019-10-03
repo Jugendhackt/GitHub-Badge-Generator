@@ -1,6 +1,8 @@
 <?php
     header('Content-type: image/svg+xml');
 
+    $fontFamilies = "Verdana,Geneva,sans-serif";
+
     if(isset($_GET['year'])) {
         if(is_numeric($_GET['year'])) {
             $evtYear = $_GET['year'];
@@ -80,7 +82,7 @@
             $evtLong = "Asia";
             $evtColor = "#FFD000";
             break;
-        
+
         default:
             $viewWidth = 231;
             $evtAbbr = "BER";
@@ -97,9 +99,9 @@
             echo('<a href="https://jugendhackt.org">');
             echo('<rect x="0" y="0" width="170" height="20" style="fill:#555"/>');
             echo('<rect x="169" y="0" width="58" height="20" style="fill:'.$evtColor.'"/>');
-            echo('<text transform="translate(8.53 14.52)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: Verdana">Created for JugendHackt in</text>');
+            echo('<text transform="translate(8.53 14.52)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: '.$fontFamilies.'">Created for Jugend hackt in</text>');
             echo('<g>');
-            echo('<text transform="translate(192.62 14.27)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: Verdana">'.$evtYear.'</text>');
+            echo('<text transform="translate(192.62 14.27)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: '.$fontFamilies.'">'.$evtYear.'</text>');
             echo('<g>');
             echo('<rect x="176.76" y="10.53" width="1.09" height="1.09" style="fill: #fff"/>');
             echo('<rect x="183.32" y="10.53" width="1.09" height="1.09" style="fill: #fff"/>');
@@ -116,7 +118,7 @@
             echo('<a href="https://jugendhackt.org">');
             echo('<path d="M23.28,0H173.85V20H26.28Z" style="fill: #555"/>');
             echo('<path d="M0,0H26.28V20H0Z" style="fill: '.$evtColor.'"/>');
-            echo('<text transform="translate(34.81 14.51)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: Verdana">Started at JugendHackt</text>');
+            echo('<text transform="translate(34.81 14.51)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: '.$fontFamilies.'">Started at Jugend hackt</text>');
             echo('<g>');
             echo('<rect x="9.31" y="10.53" width="1.09" height="1.09" style="fill: #fff"/>');
             echo('<rect x="15.87" y="10.53" width="1.09" height="1.09" style="fill: #fff"/>');
@@ -132,7 +134,7 @@
             echo('<a href="https://jugendhackt.org">');
             echo('<path d="M25.28,0H149.79V20H26.28Z" style="fill: #555"/>');
             echo('<path d="M0,0H26.28V20H0Z" style="fill: '.$evtColor.'"/>');
-            echo('<text transform="translate(34.81 14.51)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: Verdana">Created <tspan x="47.14" y="0" style="letter-spacing: -0.00244140625em">b</tspan><tspan x="53.97" y="0">y Alpacas</tspan></text>');
+            echo('<text transform="translate(34.81 14.51)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: '.$fontFamilies.'">Created <tspan x="47.14" y="0" style="letter-spacing: -0.00244140625em">b</tspan><tspan x="53.97" y="0">y Alpacas</tspan></text>');
             echo('<g>');
             echo('<rect x="9.31" y="10.53" width="1.09" height="1.09" style="fill: #fff"/>');
             echo('<rect x="15.87" y="10.53" width="1.09" height="1.09" style="fill: #fff"/>');
@@ -148,8 +150,8 @@
             echo('<a href="https://media.ccc.de/b/events/jugendhackt">');
             echo('<path d="M0,0H66.86V20H0Z" style="fill: #555"/>');
             echo('<path d="M64.86,0h100V20h-100Z" style="fill: '.$evtColor.'"/>');
-            echo('<text transform="translate(8.53 14.52)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: Verdana">View the</text>');
-            echo('<text transform="translate(89.81 14.29)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: Verdana">Presentation</text>');
+            echo('<text transform="translate(8.53 14.52)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: '.$fontFamilies.'">View the</text>');
+            echo('<text transform="translate(89.81 14.29)" style="isolation: isolate;font-size: 11px;fill: #fff;font-family: '.$fontFamilies.'">Presentation</text>');
             echo('<g>');
             echo('<rect x="73.96" y="10.55" width="1.09" height="1.09" style="fill: #fff"/>');
             echo('<rect x="80.52" y="10.55" width="1.09" height="1.09" style="fill: #fff"/>');
@@ -159,17 +161,17 @@
             echo('</a>');
             echo('</svg>');
             break;
-        
+
         default:
             echo('<svg xmlns="http://www.w3.org/2000/svg" width="'.$viewWidth.'" height="20" viewBox="0 0 '.$viewWidth.' 20">');
             echo('<title>JH'.$evtAbbr.' Badge</title>');
             echo('<a href="https://jugendhackt.org">');
             echo('<rect x="0" y="0" width="136" height="20" style="fill:#555"/>');
             echo('<rect x="135" y="0" width="7000" height="20" style="fill:'.$evtColor.'"/>');
-            
-            echo('<text transform="translate(8 14)" style="isolation:isolate;font-size:11px;fill:#fff;" font-family="Verdana,Geneva,sans-serif">Made at JugendHackt</text>');
-            echo('<text transform="translate(160 14)" style="isolation:isolate;font-size:11px;fill:#fff;" font-family="Verdana,Geneva,sans-serif">'.$evtLong.' '.$evtYear.'</text>');
-        
+
+            echo('<text transform="translate(8 14)" style="isolation:isolate;font-size:11px;fill:#fff;" font-family="'.$fontFamilies.'">Made at Jugend hackt</text>');
+            echo('<text transform="translate(160 14)" style="isolation:isolate;font-size:11px;fill:#fff;" font-family="'.$fontFamilies.'">'.$evtLong.' '.$evtYear.'</text>');
+
             echo('<rect x="144.9" y="10.55" width="1.09" height="1.09" style="fill:#fff"/>');
             echo('<rect x="151.46" y="10.55" width="1.09" height="1.09" style="fill:#fff"/>');
             echo('<polygon points="149.28 12.73 148.18 12.73 148.18 11.64 147.09 11.64 147.09 13.83 150.37 13.83 150.37 11.64 149.28 11.64 149.28 12.73" style="fill:#fff"/>');
@@ -178,5 +180,5 @@
             echo('</svg>');
             break;
     }
-    
+
 ?>
