@@ -1,5 +1,5 @@
 // * VARIABLES * //
-var genurl = "https://jhbadge.de/"; 			// URL of the generator
+var genurl = window.location.href.replace("builder.","").replace("builder/",""); 	// base URL of the generator
 
 var types = [                       			// Types of Badges (names)
 	"by-alpacas",

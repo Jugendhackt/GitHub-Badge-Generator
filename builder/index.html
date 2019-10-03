@@ -7,6 +7,13 @@
         <title>Jugend Hackt Badge Generator</title>
         <link href="fonts.css" rel="stylesheet">
         <link href="index.css" rel="stylesheet">
+        <script>
+        // if the builder is called without a / at the end: redirect
+        // this is done to ensure that the index.js will be loaded
+        if (window.location.href.slice(-1) != "/") {
+            window.location = window.location.href + "/";
+        }
+        </script>
     </head>
     <body>
         <h1>Jugend Hackt Badge Generator</h1>
