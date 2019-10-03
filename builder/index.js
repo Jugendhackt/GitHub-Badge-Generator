@@ -61,7 +61,7 @@ var yearSelected = new Date().getFullYear();    // Year selected (initialises wi
 
 
 // * INIT * //
-// Add the JugendHackt events to the event selector 
+// Add the Jugend hackt events to the event selector
 events.forEach(evt => {
 	document.getElementById("events").innerHTML += `
 		<div id="event-${evt.abbr}" onclick="selectEvent('${evt.abbr}')">
