@@ -1,8 +1,6 @@
 # Jugend hackt GitHub Badge Generator
 A simple PHP generator for svg GitHub Readme Badges for JugendHackt.
 
-**Note: This project has been merged with @magicmarvman's, resulting in a serverless version. Please put your suggestions for improvement and issues under the [new repository](https://github.com/Jugendhackt/GitHub-Badge-Generator-Serverless), as this repository is not being maintained any further and can no longer be found on the Internet.**
-
 ## Tutorial
 The generator is available at https://jhbadge.de/.
 By default it creates this Badge: ![Jugend hackt Badge](https://jhbadge.de/)
