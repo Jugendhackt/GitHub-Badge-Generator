@@ -53,6 +53,10 @@ var events = [                      			// List of Events and Abbreviations
 		name: "Asia",
 		abbr: "asia"
 	},
+	{
+		name: "Remote",
+		abbr: "rem"
+	},
 ];
 
 var typeSelected = "";              			// Type of Badge selected (part of types array)
