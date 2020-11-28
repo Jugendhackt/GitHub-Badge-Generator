@@ -141,5 +141,5 @@ function refreshIFrame() {
 	// Fill the HTML attributes with the new URL (in various forms)
 	document.getElementById("preview").src = url;
 	document.getElementById("url").innerHTML = '<a href="' + url + '">'+url+'</a>';
-	document.getElementById("md").innerText = "![](" + url + ")";
+	document.getElementById("md").innerText = "![Jugend hackt " + eventSelected + " " + yearSelected + "](" + url + ")";
 }
