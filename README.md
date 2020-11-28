@@ -1,10 +1,13 @@
-# Jugend hackt GitHub Badge Generator
+# Jugend hackt GitHub Badge Generator   ![Created by Alpacas](https://jhbadge.eu/?type=by-alpacas&evt=ber&year=2020)
 
-A simple PHP generator for svg GitHub Readme Badges for Jugend hackt.
+A simple PHP generator for svg GitHub Readme Badges for Jugend hackt.<br />
+
+
+## Quickstart
 Use the interactive builder utility: https://jhbadge.eu/builder
 
 
-## Tutorial
+## Generator Tutorial
 
 The generator is available at https://jhbadge.eu/.
 By default, it creates this Badge: ![Jugend hackt Badge](https://jhbadge.eu/)
