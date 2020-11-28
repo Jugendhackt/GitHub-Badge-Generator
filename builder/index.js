@@ -1,14 +1,15 @@
 // * VARIABLES * //
-var genurl = "https://jhbadge.de/"; 			// URL of the generator
+const genurl = "https://jhbadge.eu/"; 			// URL of the generator
 
-var types = [                       			// Types of Badges (names) 
+const types = [                       			// Types of Badges (names)
 	"by-alpacas",
 	"created-for",
 	"standard",
 	"started-at",
 	"view-presentation"
 ];
-var events = [                      			// List of Events and Abbreviations
+
+const events = [                      			// List of Events and Abbreviations
 	{
 		name: "Berlin",
 		abbr: "ber"
@@ -59,13 +60,13 @@ var events = [                      			// List of Events and Abbreviations
 	},
 ];
 
-var typeSelected = "";              			// Type of Badge selected (part of types array)
-var eventSelected = "ber";                      // Event selected (abbreviation)
-var yearSelected = new Date().getFullYear();    // Year selected (initialises with current year)
+let typeSelected = "";              			// Type of Badge selected (part of types array)
+let eventSelected = "ber";                      // Event selected (abbreviation)
+let yearSelected = new Date().getFullYear();    // Year selected (initialises with current year)
 
 
 // * INIT * //
-// Add the JugendHackt events to the event selector 
+// Add the JugendHackt events to the event selector
 events.forEach(evt => {
 	document.getElementById("events").innerHTML += `
 		<div id="event-${evt.abbr}" onclick="selectEvent('${evt.abbr}')">
@@ -101,7 +102,7 @@ refreshIFrame();
 // * FUNCTIONS * //
 // Onclick event for all type select divs
 function selectType(abbr) {
-	if(abbr != "standard") { 	// If standard, leave abbr empty
+	if(abbr !== "standard") { 	// If standard, leave abbr empty
 		typeSelected = abbr;	// Else, save the selection
 	}
 	else {
@@ -132,10 +133,10 @@ function selectYear() {
 	refreshIFrame();	// Refresh the preview with the new variables
 }
 
-// Refreshes the content of the preview iFrame with the current variables. Also refreshes the 
+// Refreshes the content of the preview iFrame with the current variables. Also refreshes the
 function refreshIFrame() {
-	var url = "";
-	if(typeSelected == "") {	// If standard, don't add a type GET Variable for simplicity
+	let url = "";
+	if(typeSelected === "") {	// If standard, don't add a type GET Variable for simplicity
 		url = genurl + "?evt=" + eventSelected + "&year=" + yearSelected;
 	}
 	else {
