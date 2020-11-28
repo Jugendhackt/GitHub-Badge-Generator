@@ -80,6 +80,12 @@
             $evtLong = "Asia";
             $evtColor = "#FFD000";
             break;
+        case 'rem':
+            $viewWidth = 243;
+            $evtAbbr = "REM";
+            $evtLong = "Remote";
+            $evtColor = "#00498d";
+            break;
         
         default:
             $viewWidth = 231;

@@ -162,3 +162,6 @@ svg[event="ulm"] #head {
 svg[event="asia"] #head {
     fill: #FFD000;
 }
+svg[event="rem"] #head {
+    fill: #00498d;
+}
