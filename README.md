@@ -1,6 +1,8 @@
 # Jugend hackt GitHub Badge Generator
 
-A simple PHP generator for svg GitHub Readme Badges for JugendHackt.
+A simple PHP generator for svg GitHub Readme Badges for Jugend hackt.
+Use the interactive builder utility: https://jhbadge.eu/builder
+
 
 ## Tutorial
 
