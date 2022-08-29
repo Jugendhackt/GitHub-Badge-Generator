@@ -29,7 +29,7 @@ These are the events the generator recognizes:
 - `cgn` - Köln
 - `ffm` - Frankfurt
 - `hal` - Halle
-- `hd` - Heidelbarg
+- `hd` - Heidelberg
 - `hh` - Hamburg
 - `mv` - Mecklenburg-Vorpommern
 - `ulm` - Ulm
